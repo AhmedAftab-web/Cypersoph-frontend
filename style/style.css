@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.up-nav-row {
+  height: 30px;
+  padding: 1px 0;
+  background-color: #1B5777;
+}
+
+.up-nav-row a {
+  color: #DDDDDD;
+}
+
+@media (max-width: 768px) {
+  .up-nav-row {
+    height: 70px;
+  }
+  .up-nav-row .contacts p {
+    display: -ms-grid;
+    display: grid;
+  }
+  .up-nav-row .social-links {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .up-nav-row {
+    height: 100px;
+  }
+  .up-nav-row .social-links {
+    padding: 0 20px 0 0;
+  }
+}
+
+.main-nav {
+  height: 75px;
+}
+
+.main-nav .main-nav-items ul li {
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+.main-nav .main-nav-items ul li button {
+  background: #E08020;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 7px 10px;
+  font-weight: bold;
+}
+
+.main-nav .main-nav-items ul li button:hover {
+  color: #E08020;
+  background: #fff;
+  border: 2px solid #E08020;
+  border-radius: 25px;
+}
+
+@media (min-width: 768px) {
+  .main-nav .main-nav-items ul li {
+    padding-right: 0;
+  }
+}
+
+.main-nav .navbar-collapse {
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .main-nav .navbar-collapse {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav .navbar-expand-md {
+    padding-right: 0;
+  }
+}
+
+header {
+  height: 620px;
+  padding: 15% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../images/Artboard 1.png") no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 580px;
+  }
+}
+
+header .header-text button {
+  background: #E08020;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 7px 10px;
+  font-weight: bold;
+}
+
+header .header-text button:hover {
+  color: #E08020;
+  background: #fff;
+  border: 2px solid #E08020;
+  border-radius: 25px;
+}
+
+header .header-text h1 {
+  font-size: 2.7rem;
+  color: #fff;
+}
+
+header .header-text p {
+  font-size: 20px;
+  color: #DDDDDD;
+}
+
+@media (min-width: 425px) {
+  header .header-text {
+    padding: 0 20px;
+  }
+}
+
+#intro {
+  padding: 30px 0;
+}
+
+#intro .aboutUs {
+  text-align: center;
+}
+
+#intro .aboutUs h1, #intro .aboutUs h2, #intro .aboutUs h3, #intro .aboutUs h4 {
+  color: #1B5777;
+}
+
+#intro .aboutUs p {
+  color: #616161;
+}
+
+#intro .aboutUs p b {
+  color: #515151;
+}
+
+#services {
+  background-color: #DDDDDD;
+  height: 860px;
+  text-align: center;
+}
+
+#services .inner-services {
+  padding: 20px 0;
+}
+
+@media (max-width: 425px) {
+  #services {
+    height: 1975px;
+  }
+}
+
+@media (max-width: 425px) {
+  #services {
+    height: 2220px;
+  }
+}
+
+#services h1, #services h2, #services h3, #services h4 {
+  color: #1B5777;
+}
+
+#services .services-holder {
+  padding: 20px;
+}
+
+#services .services-holder button {
+  background: #E08020;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 7px 10px;
+  font-weight: bold;
+}
+
+#services .services-holder button:hover {
+  color: #E08020;
+  background: #fff;
+  border: 2px solid #E08020;
+  border-radius: 25px;
+}
+
+#services .services-holder .services-items {
+  text-align: center;
+}
+
+#services .services-holder .services-items h2 {
+  color: #1B5777;
+}
+
+#engagements {
+  padding: 40px 0;
+}
+
+#engagements h1, #engagements h2, #engagements h3, #engagements h4 {
+  color: #1B5777;
+}
+
+#engagements .engage-list {
+  height: 480px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 10px solid white;
+}
+
+#engagements .engage-list .card-list {
+  background: transparent;
+  border: none;
+  padding: 50px 25px;
+}
+
+#engagements .engage-list .card-list button {
+  background: #E08020;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 7px 10px;
+  font-weight: bold;
+}
+
+#engagements .engage-list .card-list button:hover {
+  color: #E08020;
+  background: #fff;
+  border: 2px solid #E08020;
+  border-radius: 25px;
+}
+
+@media (max-width: 375px) {
+  #engagements .engage-list .card-body {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #engagements .engage-list {
+    height: 600px;
+  }
+}
+
+@media (max-width: 425px) {
+  #engagements .engage-list {
+    height: 550px;
+    border: none;
+  }
+}
+
+#engagements .engage-list-1 {
+  background: url("../images/Artboard 2.png") no-repeat;
+  background-size: cover;
+}
+
+#engagements .engage-list-2 {
+  background: url("../images/Artboard 3.png") no-repeat;
+  background-size: cover;
+}
+
+#engagements .engage-list-3 {
+  background: url("../images/Artboard 4.png") no-repeat;
+  background-size: cover;
+}
+
+#engagements .engage-list-4 {
+  background: url("../images/Artboard 5.png") no-repeat;
+  background-size: cover;
+}
+
+#engagements .engage-list-5 {
+  background: url("../images/Artboard 6.png") no-repeat;
+  background-size: cover;
+}
+
+#engagements .engage-list-6 {
+  background: url("../images/Artboard 7.png") no-repeat;
+  background-size: cover;
+}
+
+#about {
+  padding: 20px 0;
+}
+
+#about .aboutUs {
+  text-align: center;
+  line-height: 1.6;
+}
+
+#about .aboutUs h1, #about .aboutUs h2, #about .aboutUs h3, #about .aboutUs h4 {
+  color: #1B5777;
+}
+
+#about .aboutUs p {
+  color: #616161;
+}
+
+#clients {
+  padding: 20px 0 0 0;
+  position: relative;
+}
+
+#clients .our-clients {
+  padding: 20px;
+  height: 350px;
+  background: url("../images/Artboard 9.png");
+  background-size: cover;
+}
+
+#clients .our-clients h1, #clients .our-clients h2, #clients .our-clients h3, #clients .our-clients h4 {
+  color: #1B5777;
+}
+
+@media (max-width: 425px) {
+  #clients .our-clients {
+    padding: 0;
+    height: 675px;
+  }
+}
+
+#clients .our-clients img {
+  width: 200px;
+  height: 90px;
+  padding: 20px;
+  display: inline-block;
+}
+
+#evalution {
+  height: 250px;
+}
+
+#evalution .clients-text {
+  padding: 0 10px;
+}
+
+#evalution .evalution-bg {
+  background: url("../images/Artboard 8.png") no-repeat;
+  background-size: cover;
+  height: 250px;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 425px) {
+  #evalution .evalution-bg {
+    padding: 0;
+  }
+}
+
+#evalution .evalution-bg .evalution-text {
+  padding: 0 200px;
+}
+
+#evalution .evalution-bg .evalution-text button {
+  background: #E08020;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 7px 10px;
+  font-weight: bold;
+}
+
+#evalution .evalution-bg .evalution-text button:hover {
+  color: #E08020;
+  background: #fff;
+  border: 2px solid #E08020;
+  border-radius: 25px;
+}
+
+#evalution .evalution-bg .evalution-text h1 {
+  font-size: 2.7rem;
+  color: #fff;
+}
+
+#evalution .evalution-bg .evalution-text p {
+  font-size: 20px;
+  color: #DDDDDD;
+}
+
+@media (max-width: 425px) {
+  #evalution .evalution-bg .evalution-text {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  #evalution .evalution-bg .evalution-text {
+    padding: 10px 0;
+  }
+  #evalution .evalution-bg .evalution-text h1 {
+    font-size: 2.3rem;
+  }
+  #evalution .evalution-bg .evalution-text p {
+    font-size: 20px;
+  }
+}
+
+footer {
+  height: 330px;
+}
+
+footer .upper-footer {
+  height: 300px;
+  background: #1B5777;
+}
+
+footer .upper-footer .footer-items {
+  padding: 30px 0;
+}
+
+footer .upper-footer .footer-items h6 {
+  color: #E08020;
+}
+
+footer .upper-footer .footer-items ul {
+  list-style: none;
+  padding: 0;
+  font-size: 12px;
+}
+
+footer .upper-footer .footer-items p, footer .upper-footer .footer-items li {
+  color: #DDDDDD;
+  padding: 1px 0;
+}
+
+@media (max-width: 768px) {
+  footer .upper-footer {
+    height: 425px;
+  }
+}
+
+@media (max-width: 425px) {
+  footer .upper-footer {
+    height: 720px;
+  }
+}
+
+footer .lower-footer {
+  height: 30px;
+  background: #E08020;
+}
+
+footer .lower-footer p {
+  color: #DDDDDD;
+  font-size: 15px;
+}
+/*# sourceMappingURL=style.css.map */

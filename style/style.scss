@@ -1,0 +1,357 @@
+@mixin btn-shape {
+    button{
+        background: $btnColor;
+        color: $textHeader;
+        border-radius: 25px; 
+        border: none;
+        outline: none;
+        padding: 7px 10px;
+        font-weight: bold;
+        &:hover{
+            color: $btnColor;
+            background: $textHeader;
+            border: 2px solid $btnColor;
+            border-radius: 25px; 
+        }
+        };
+}
+@mixin headings {
+    h1,h2,h3,h4{
+        color: $navyBlue;
+    }
+    
+}
+
+@import './variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.up-nav-row{
+    height: 30px;
+    padding: 1px 0;
+    background-color: $navyBlue;
+    a{
+        color: $lightGrey;
+    }
+    @media (max-width: 768px){
+        height: 70px;
+        .contacts p{
+            display: grid;
+
+        }
+        .social-links{
+            padding: 20px 0;
+        }
+    }
+    @media (max-width: 425px){
+    height: 100px;
+    .social-links{
+        padding: 0 20px 0 0;
+    }
+    }
+    
+
+
+}
+.main-nav{
+    height: 75px;
+    .main-nav-items{
+        ul li{
+            padding-right: 15px;
+            font-weight: bold;
+            @include btn-shape;
+            
+            @media (min-width:768px) {
+                padding-right:0;
+            }      
+           
+        }
+    }
+    .navbar-collapse{
+        padding: 15px;
+        
+        @media (min-width:768px) {
+            padding:0;
+        } 
+    }
+    @media (min-width: 768px){
+        .navbar-expand-md{
+            padding-right: 0;
+        }
+    }
+
+}
+
+header{
+    height: 620px;
+    padding: 15% 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/Artboard\ 1.png") no-repeat;
+    background-size: cover;
+    @media (max-width:768px){
+        height: 580px;
+    }
+    
+    .header-text{
+        // padding: 0 200px;
+        @include btn-shape;
+        h1{
+            font-size: 2.7rem;
+            color: $textHeader;
+        }
+        p{
+            font-size: 20px;
+            color: $lightGrey;
+        }
+        @media (min-width: 425px) {
+            padding: 0 20px;
+        }
+        
+    }
+}
+// ==============  About =================
+#intro{
+    padding: 30px 0;
+    .aboutUs{
+        text-align: center;
+        
+        @include headings;
+        p{
+            b{
+                color: $textBold;
+            }
+            color: $textBold1 ;
+
+        }
+    }
+
+}
+// -----------Services-------------
+#services{
+    background-color: $lightGrey;
+    height: 860px;
+    text-align: center;
+    .inner-services{
+        padding: 20px 0;
+    }
+    @media (max-width:425px){
+    
+        height: 1975px;
+    }
+    @media (max-width:425px){
+    
+        height: 2220px;
+    }
+
+    
+   @include headings;
+    .services-holder{
+        padding: 20px;
+        @include btn-shape;
+        .services-items{
+           text-align: center;
+           h2{
+            color: $navyBlue;
+           }
+           //background-color: $lightGrey;      //for Responsiveness
+        }
+    }
+    
+}
+// ================== Engagements ====================
+#engagements{
+    padding: 40px 0;
+    @include headings;
+
+    .engage-list{
+        height: 480px;
+        box-sizing: border-box; 
+        border: 10px solid white;
+        
+
+        .card-list{
+            background: transparent;
+            border: none;
+            padding: 50px 25px;
+            @include btn-shape;
+            
+        }
+        .card-body{
+            @media (max-width: 375px){
+                padding: 0;
+            }
+        }
+        @media (max-width: 768px){
+            height: 600px;
+           
+        }
+        @media (max-width: 425px){
+            height: 550px;
+            border:none;
+        }
+        
+
+    }
+    .engage-list-1{
+        background: url("../images/Artboard\ 2.png") no-repeat;
+        background-size: cover;
+    }
+    .engage-list-2{
+        background: url("../images/Artboard\ 3.png") no-repeat;
+        background-size: cover;
+    }
+    .engage-list-3{
+        background: url("../images/Artboard\ 4.png") no-repeat;
+        background-size: cover;
+    }
+    .engage-list-4{
+        background: url("../images/Artboard\ 5.png") no-repeat;
+        background-size: cover;
+    }
+    .engage-list-5{
+        background: url("../images/Artboard\ 6.png") no-repeat;
+        background-size: cover;
+    }
+    .engage-list-6{
+        background: url("../images/Artboard\ 7.png") no-repeat;
+        background-size: cover;
+    }
+    
+
+    
+
+}
+
+// ==========A B O U T ===================
+#about{
+    padding: 20px 0;
+    .aboutUs{
+        text-align: center;
+        line-height: 1.6;
+        @include headings;
+        p{
+           
+            color: $textBold1 ;
+
+        }
+    }
+
+}
+// ======= CLients ==================
+#clients{
+    padding: 20px 0 0 0;
+    position: relative;
+    .our-clients{
+        @include headings;
+        padding: 20px;
+        height: 350px;
+        background: url("../images/Artboard\ 9.png");
+        background-size: cover;
+        @media (max-width:425px) {
+           
+                padding: 0;
+                height: 675px;
+            
+        }
+        img{
+            width: 200px;
+            height: 90px;
+            padding: 20px;
+            display: inline-block;
+
+        }
+    }
+}
+#evalution{
+    height: 250px;
+    .clients-text{
+        padding: 0 10px;
+    }
+    .evalution-bg{
+        background: url("../images/Artboard\ 8.png") no-repeat;
+        background-size: cover;
+        height: 250px;
+        padding: 20px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    @media (max-width:425px) {
+        padding: 0;
+    }
+    
+    .evalution-text{
+        padding: 0 200px;
+        @include btn-shape;
+        h1{
+            font-size: 2.7rem;
+            color: $textHeader;
+        }
+        p{
+            font-size: 20px;
+            color: $lightGrey;
+        }
+        @media (max-width: 425px) {
+            padding: 0 20px;
+        }
+        @media (max-width: 375px) {
+            padding: 10px 0;
+            h1{
+                font-size: 2.3rem;
+               
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+
+        
+    }
+    }
+}
+
+// ========== F o o t e r =============
+footer{
+    height: 330px;
+
+    .upper-footer{
+        height: 300px;
+        background: $navyBlue;
+        .footer-items{
+            padding: 30px 0;
+            h6{
+                color: $btnColor;
+            }
+            ul{
+                list-style: none;
+                padding:0;
+                font-size: 12px;       
+            }
+            p,li{
+                color: $lightGrey;
+                padding: 1px 0; 
+            }  
+        }
+        @media (max-width:768px) {
+            height: 425px;
+        }
+        @media (max-width:425px) {
+            height: 720px;
+        }
+    }
+    .lower-footer{
+        height: 30px;
+        background: $btnColor;
+        p{
+            color: $lightGrey;
+            font-size: 15px;
+        }
+    }
+}
